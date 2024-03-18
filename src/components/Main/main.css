@@ -186,6 +186,7 @@ textarea::-webkit-scrollbar{
     .main-bottom textarea{
         flex: none;
         width: 150px;
+        font-size: 14px;
     }
     .main-bottom img{
         width: 20px;
