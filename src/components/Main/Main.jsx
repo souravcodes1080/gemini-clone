@@ -16,7 +16,7 @@ function Main() {
 
   const [phase1, setPhase1] = useState("Suggest beautiful places to see on an upcoming road trip")
   const [phase2, setPhase2] = useState("Breifly sumarize this concept: urban planning")
-  const [phase3, setPhase3] = useState("Brainstorm team bonding activities for our work retreat")
+  const [phase3, setPhase3] = useState("Discuss the concept of 'justice' according to Plato's Republic")
   const [phase4, setPhase4] = useState("Improve the readability of the following code")
    const resultRef = useRef(null);
    useEffect(() => {
@@ -110,14 +110,14 @@ function Main() {
               />
 
               <div>
-                <img src={assets.gallery_icon} alt="" />
-                <img src={assets.mic_icon} alt="" />
+                <img src={assets.gallery_icon} alt="" onClick={()=>alert("Upgrade to premium to use this feature.")}/>
+                <img src={assets.mic_icon} alt="" onClick={()=>alert("Buy me a coffee to use this feature.")} />
                 {input ? <img onClick={() => onSent()} src={assets.send_icon} alt="" />: null}
               </div>
             </div>
             <p className="bottom-info">
               Gemini may display inaccurate information, including about people,
-              so double check its responses. Your privacy and Gemini apps.
+              so double check its responses. <a target="_blank" href="https://sourav-c-portfolio.netlify.app">Developed by Sourav.</a>
             </p>
           </div>
         </div>
