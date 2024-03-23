@@ -133,7 +133,7 @@ function Main() {
                 value={input}
                 type="text"
                 rows={1}
-                placeholder="Enter your prompt here..."
+                placeholder="Enter prompt here..."
               />
               <div>
                 <img

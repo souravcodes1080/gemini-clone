@@ -182,11 +182,13 @@ textarea::-webkit-scrollbar{
 }
 
 @media (max-width: 600px){
-    
+    .main .card{
+        display: none;
+    }
     .main-bottom textarea{
         flex: none;
         width: 150px;
-        font-size: 14px;
+        font-size: 16px;
     }
     .main-bottom img{
         width: 20px;
