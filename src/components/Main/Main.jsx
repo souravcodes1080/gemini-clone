@@ -137,19 +137,21 @@ function Main() {
               />
               <div>
                 <img
+                 title="Upload Image"
                   src={assets.gallery_icon}
                   alt=""
                   onClick={() => alert("Buy me a coffee to use this feature.")}
                 />
                 {listening ? "On" : null}
                 <img
+                 title="Voice search"
                   src={assets.mic_icon}
                   alt=""
                   onClick={speakNow}
                 />
 
                 {input ? (
-                  <img onClick={() => onSent()} src={assets.send_icon} alt="" />
+                  <img  title="Send" onClick={() => onSent()} src={assets.send_icon} alt="" />
                 ) : null}
               </div>
             </div>
